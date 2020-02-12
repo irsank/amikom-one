@@ -26,12 +26,9 @@ export default class Card extends React.Component {
 
 const styles = StyleSheet.create({
   card:{
-   marginLeft:6,
-   width:Dimensions.get('window').width / 0.0,
-   height:Dimensions.get('window').width / 0.0,
-   maxwidth:300,
-   maxheight:100,
+   minHeight: 250,
    paddingTop:15,  
+   paddingHorizontal: 20,
  },
  cardMatkul:{
    borderWidth:0, 
