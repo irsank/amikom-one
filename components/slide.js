@@ -1,19 +1,18 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, Dimensions } from 'react-native';
-import ImageSlider from 'react-native-image-slider';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import Card from './card';
 
 const DATA = [
   {
-      matkul: 'Character And Teamwork Building',
-      ruangkls: "5.4.2",
-      dosen: "Muhammad Baharudin, S.Kom,M.Eng"
+    matkul: 'Character And Teamwork Building',
+    ruangkls: "5.4.2",
+    dosen: "Muhammad Baharudin, S.Kom,M.Eng"
   },
   {
-      matkul: 'Pemrograman II',
-      ruangkls: "5.3.3",
-      dosen: "Muhammad Anjasmoro, M.Kom"
+    matkul: 'Pemrograman II',
+    ruangkls: "5.3.3",
+    dosen: "Muhammad Anjasmoro, M.Kom"
   },
   {
     matkul: 'Character And Teamwork Building',
@@ -21,9 +20,9 @@ const DATA = [
     dosen: "Muhammad Baharudin, S.Kom,M.Eng"
   },
   {
-      matkul: 'Pemrograman II',
-      ruangkls: "5.3.3",
-      dosen: "Muhammad Anjasmoro, M.Kom"
+    matkul: 'Pemrograman II',
+    ruangkls: "5.3.3",
+    dosen: "Muhammad Anjasmoro, M.Kom"
   },  
 ];
 
@@ -36,9 +35,10 @@ export default class Slide extends React.Component {
 
   renderCard = ({item, index}) => {
     return (
-        <Card data={item} />
+      <Card data={item} />
     );
   }
+
   render() {
     const { activeIndex } = this.state;
     return (
@@ -64,7 +64,6 @@ export default class Slide extends React.Component {
             inactiveDotElement={<View style={styles.paginationDot} />}
           />
         </View>
-
         <View style={styles.border} />
       </View>
     );
@@ -73,10 +72,10 @@ export default class Slide extends React.Component {
 
 const styles = StyleSheet.create({
   border:{
-      marginTop:23,
-      borderBottomColor: '#f6f6f6',
-      borderBottomWidth: 2,
-      marginLeft:24
+    marginTop: 23,
+    borderBottomColor: '#f6f6f6',
+    borderBottomWidth: 2,
+    marginLeft: 24
   },
   paginationContainer: {
     paddingBottom: 10,
