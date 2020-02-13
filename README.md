@@ -1,11 +1,34 @@
-# UI Aplikasi Amikom One
+# Amikom One - React Native UI
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
+This is the react native version of the Amikom One application. 
+I can design the look of this application from:
+https://medium.com/@imamfajar675/me-redesain-aplikasi-amikom-one-83e68161060d
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
+<img src="./preview.jpg" width="300" />
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the **Embed** button.
+Install the below tools/packages
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
+| Serial No   | Software           | Version   | Installation site |
+| :---------: | :----------------: | :-------: | :---------------- |
+| 1           | Node.js            | >= 13.7.0  | [Install NodeJS](https://nodejs.org/en/download/) |
+| 2           | npm                | >= 3.13.6 | [Install NPM](https://www.npmjs.com/get-npm)      |
+| 3           | react-native       | >= 0.61.0 | [Install react-native](https://www.npmjs.com/package/react-native) |
+| 4           | react-native-cli   | >= 2.0.1  | [Install react-native-cli](https://www.npmjs.com/package/react-native-cli) |
+| 5           | exp                | >= 55.0.5 | [Install Expo](https://www.npmjs.com/package/exp) |
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+
+### Setup Instructions
+
+#### System setup
+1. Clone the repo with `git clone [REPO_URL]` command
+2. Switch to the project's root directory in terminal
+3. Install the dependencies by running `yarn install`
+4. Once, 'yarn install' is completed, run `exp start` to start the expo and react-native server
+5. If it shows a QR code on the terminal as a result of 'exp start' command, then you are good to go!
+
+Ignore the first step on 'Mobile setup' instructions given below if you already have 'Expo' app installed on your phone.
+
+#### Mobile setup
+1. Install 'Expo' application on your android/iOS device. You can find the links to Android and iOS apps [here](https://expo.io/tools#client).
+2. Scan the QR code shown on the terminal.
+3. Once the QR code is successfully scanned, it will take few seconds to load and render the app.
